@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background: #7A0371;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: black;
+        }
+        
+        header {
+            background: rgb(32, 31, 31);
+            color: rgba(175, 139, 86, 255);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        header .logo {
+            width: 25%;
+            height: auto;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background: rgb(32, 31, 31);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            width: 90%;
+        }
+        
+        .box {
+            width: calc(100% - 40px);
+            /* Full width with padding */
+            max-width: 1200px;
+            background: #f3f3f3;
+            /* Softer white color */
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+        }
+        
+        .box:hover {
+            transform: scale(1.02);
+            background: rgba(245, 245, 245, 0.9);
+            /* Slightly lighter on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* More prominent shadow */
+        }
+        
+        .box h3 {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://github.com/Chaitya18/EduEase/blob/main/image-removebg-preview.png?raw=true" alt="EduEase Logo" class="logo">
+            <h1>Welcome to EduEase</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box" onclick="openDSA()">
+            <h3>Assignment 1</h3>
+        </div>
+        <div class="box" onclick="openDSA()">
+            <h3>Assignment 2</h3>
+        </div>
+        <div class="box" onclick="openDSA()">
+            <h3>Assignment 3</h3>
+        </div>
+        <div class="box" onclick="openDSA()">
+            <h3>Assignment 4</h3>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dashboard. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openDSA() {
+            window.location.href = 'dsa-assignments.html';
+        }
+    </script>
+</body>
+
+</html>
